@@ -1,0 +1,23 @@
+.hero {
+    &__title {
+        padding-block: 5rem;
+    }
+    &__line {
+        position: relative;
+        &::after {
+            content: "";
+            width: 80px;
+            height: 2px;
+            background-color: var(--col-blue-400);
+            position: absolute;
+            top: 0.75em;
+            left: 0;
+        }
+    }
+    &__intro {
+        font-size: var(--fs-550);
+        font-weight: var(--fw-600);
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+    }
+}

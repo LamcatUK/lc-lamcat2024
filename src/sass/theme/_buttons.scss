@@ -1,0 +1,27 @@
+.button {
+    padding-top: 1rem;
+    a {
+        padding: 0.6rem 3rem 0.6rem 2rem;
+        border: 2px solid var(--col-dark);
+        border-radius: 100vw;
+        position: relative;
+        color: var(--col-dark);
+        background-color: var(--col-light);
+        transition: background-color var(--transition), color var(--transition);
+        &::after {
+            position: absolute;
+            content: "\f061";
+            font-family: 'Font Awesome 6 Sharp';
+            font-weight: 300;
+            margin-left: 0.5em;
+            transition: margin var(--transition);
+        }
+        &:hover {
+            background-color: var(--col-dark);
+            color: var(--col-light) !important;
+            &::after {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

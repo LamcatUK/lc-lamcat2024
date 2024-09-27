@@ -1,0 +1,54 @@
+@import "props";
+@import "typography";
+@import "colours";
+@import "buttons";
+@import "header";
+@import "footer";
+@import "wp";
+@import "blocks/blocks";
+
+.container-xl .container-xl {
+    padding-inline: 0;
+}
+
+main {
+    margin-top: var(--h-top);
+
+    a {
+        text-decoration: none;
+        font-weight: var(--fw-600);
+        color: var(--col-dark);
+        transition: color var(--transition);
+        &:hover {
+            color: var(--col-blue-400);
+        }
+    }
+}
+
+.arrow-link {
+    a {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "\f061";
+            font-family: 'Font Awesome 6 Sharp';
+            font-weight: 300;
+            margin-left: 0.5em;
+            transition: margin var(--transition);
+        }
+        &:hover::after {
+            margin-left: 1em;
+        }
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
