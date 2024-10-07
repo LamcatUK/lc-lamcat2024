@@ -57,9 +57,15 @@ the_post();
             <div class="col-md-6">
                 <div class="sticky-top sticky-offset pt-5">
                     <?= get_the_content() ?>
-                    <a href="<?= get_field('site_url') ?>"
-                        target="_blank" rel="noopener"
-                        class="link--external"><?= get_the_title() ?></a>
+                    <?php
+                    if (get_field('site_url') ?? null) {
+                    ?>
+                        <a href="<?= get_field('site_url') ?>"
+                            target="_blank" rel="noopener"
+                            class="link--external"><?= get_the_title() ?></a>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
             <div class="col-md-6 single_work pt-4">
