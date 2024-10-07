@@ -142,7 +142,7 @@ defined('ABSPATH') || exit;
                     aria-label="Toggle Navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbar">
+                <div class="collapse navbar-collapse" id="primaryNav">
                     <?php
                     wp_nav_menu(
                         array(
