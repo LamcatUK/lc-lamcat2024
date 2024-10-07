@@ -1,6 +1,9 @@
 .hero {
     &__title {
-        padding-block: 5rem;
+        padding-block: 2rem;
+        @media (min-width:768px) {
+            padding-block: 5rem;
+        }
         h1 {
             margin-bottom: 0;
         }

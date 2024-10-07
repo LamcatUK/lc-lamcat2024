@@ -26,6 +26,9 @@ a.anchor {
 
 main {
     margin-top: var(--h-top);
+    @media (min-width:768px) {
+        margin-top: var(--h-top-desktop);
+    }
 
     a {
         text-decoration: none;
