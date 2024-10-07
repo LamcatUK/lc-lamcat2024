@@ -1,6 +1,6 @@
 <section class="latest pb-5">
     <div class="container-xl">
-        <div class="row">
+        <div class="row g-4">
             <?php
             $q = new WP_Query(array(
                 'post_type' => 'post',

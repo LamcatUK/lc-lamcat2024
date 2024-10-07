@@ -1,8 +1,8 @@
 <section class="work">
     <div class="container-xl">
         <div class="filters">
-            <div class="row align-items-center">
-                <div class="col-md-4">
+            <div class="row g-3 align-items-center">
+                <div class="col-sm-6 col-lg-4 d-flex justify-content-between justify-content-md-start align-items-center">
                     <label for="work-type-filter">Work Type:</label>
                     <select id="work-type-filter" class="form-select">
                         <option value="all">Show All</option>
@@ -22,7 +22,7 @@
                         ?>
                     </select>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-6 col-lg-4 d-flex justify-content-between justify-content-md-start align-items-center">
                     <label for="client-sector-filter">Client Sector:</label>
                     <select id="client-sector-filter" class="form-select">
                         <option value="all">Show All</option>
@@ -42,10 +42,10 @@
                         ?>
                     </select>
                 </div>
-                <div class="col-md-2 align-self-end">
+                <div class="col-md-6 col-lg-2 text-center text-md-start">
                     <div class="button" id="reset-filters" type="button"><span>Reset Filters</span></div>
                 </div>
-                <div class="col-md-2 align-items-start justify-content-end d-flex flex-column sort-options">
+                <div class="col-md-6 col-lg-2 align-items-start justify-content-around justify-content-md-end d-flex flex-md-column sort-options">
                     <label>
                         <input type="radio" name="sort" value="chronological" checked> Chronological
                     </label>

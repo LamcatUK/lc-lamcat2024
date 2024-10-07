@@ -4,7 +4,9 @@
 
     .review__inner {
         display: grid;
-        grid-template-columns: 100px 1fr;
+        @media (min-width:768px) {
+            grid-template-columns: 100px 1fr;
+        }
         gap: 2rem;
         transition: color var(--transition);
     }
