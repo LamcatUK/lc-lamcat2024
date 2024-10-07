@@ -1,0 +1,63 @@
+.work {
+    .filters {
+        // display: flex;
+        // row-gap: 1rem;
+        // column-gap: 2rem;
+        // flex-wrap: wrap;
+
+        .form-select {
+            display: inline-block;
+            width: 240px;
+            margin-inline-start: 0.5rem;
+        }
+
+        .sort-options {
+            label {
+                cursor: pointer;
+            }
+        }
+        input[type="radio"] {
+            margin-right: 0.25rem;
+        }
+    }
+  
+    .gallery {
+        display: grid;
+        column-gap: 1rem;
+        row-gap: 2.5rem;
+        @media (min-width:576px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width:992px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width:1200px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+  
+    &__card {
+        // background-color: #f0f0f0;
+        // border: 1px solid #ccc;
+        // text-align: center;
+        // transition: opacity 0.5s ease, transform 0.5s ease;  /* Add transition */
+        opacity: 1;  /* Default fully visible */
+        // transform: scale(1);  /* Default scale */
+        font-weight: var(--fw-400);
+        &:hover {
+            text-decoration: underline;
+        }
+        img {
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+  
+    &__card.hidden {
+        opacity: 0;  /* Fades out */
+        // transform: scale(0.95);  /* Optional: shrink slightly as it fades */
+        pointer-events: none;  /* Prevent interaction while hidden */
+        position: absolute;  /* To prevent empty space */
+    }
+}

@@ -1,0 +1,75 @@
+.stepcard {
+
+	&--three {
+		@media (min-width:576px) {
+			grid-template-columns: 1fr;
+		}
+		@media (min-width:992px) {
+			grid-template-columns: calc(33% + 1rem) 1fr 1fr;
+		}
+	}
+
+	&--four {
+		@media (min-width:576px) {
+			grid-template-columns: calc(50% + 1rem) 1fr;
+		}
+		@media (min-width:992px) {
+			grid-template-columns: calc(25% + 1rem) 1fr 1fr 1fr;
+		}
+	}
+
+	&__container {
+		display: grid;
+		row-gap: 1rem;
+  	}
+
+  	&__card {
+    	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 150' preserveAspectRatio='none'%3E%3Cpolygon fill='%23efefef' points='50 150 0 135 0 0 50 15 100 0 100 135 50 150'/%3E%3C/svg%3E");
+    	@media (min-width: 576px) {
+      		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 100' preserveAspectRatio='none'%3E%3Cpolygon fill='%23efefef' points='150 50 135 100 0 100 15 50 0 0 135 0 150 50'/%3E%3C/svg%3E");
+    	}
+    	background-size: 100% 100%;
+    	background-repeat: no-repeat;
+		background-position: center;
+		&:not(:nth-child(odd)) {
+			@media (min-width:576px) {
+				margin-left: -1rem;
+			}
+			@media (min-width:768px) {
+				margin-left: -2rem;
+			}
+		}
+		&:not(:nth-child(1)) {
+			margin-top: -1rem; 
+			@media (min-width:576px) {
+				margin-top: 0;
+			}
+			@media (min-width:992px) {
+				margin-left: -1rem;
+				margin-top: 0;
+			}
+		}
+	}
+
+
+
+  &__inner {
+	padding: 2rem 1rem 3rem 1rem;
+    text-align: center;
+    @media (min-width:576px) {
+        text-align: start;
+        padding: 1rem 3rem 1rem 4rem;
+    }
+    @media (min-width:992px) {
+        padding: 1rem 3.5rem 1rem 3rem;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__content {
+    margin-top: 1rem;
+  }
+}

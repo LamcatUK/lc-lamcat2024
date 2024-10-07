@@ -11,6 +11,9 @@
             <div class="col-md-6 hero__intro">
                 <?=get_field('intro')?>
             </div>
+            <div class="col-md-5 text-center">
+                <?=do_shortcode('[contact_button]')?>
+            </div>
         </div>
     </div>
 </section>

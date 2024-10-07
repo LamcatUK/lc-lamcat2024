@@ -1,0 +1,26 @@
+.three_cards {
+    &__card {
+        display: block;
+        background-color: var(--col-blue-400);
+        padding: 1rem;
+        color: var(--col-light);
+        transition: background-color var(--transition);
+        &:hover {
+            background-color: var(--col-blue-300);
+            color: var(--col-light);
+        }
+    }
+    &__icon {
+        width: 100px;
+        aspect-ratio: 10 / 11;
+    }
+    &__title {
+        font-size: var(--fs-600);
+    }
+    &__content {
+        font-weight: var(--fw-400);
+        strong {
+            font-weight: var(--fw-600);
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.list {
+    // @media(min-width:992px) {
+    //     .container-xl {
+    //         columns: 2;
+    //         column-gap: 3rem;
+    //     }
+    // }
+
+    &__item {
+        display: grid;
+        column-gap: 2rem;
+        row-gap: 1rem;
+        grid-template-columns: 80px 1fr;
+        grid-template-areas: "number title" "number content";
+        margin-bottom: 1rem;
+    }
+    &__number {
+        grid-area: number;
+        font-weight: var(--fw-500);
+        font-size: var(--fs-900);
+        line-height: 1;
+        justify-self: end;
+        color: var(--col-blue-400);
+        &::after {
+            content: "/";
+        }
+    }
+    &__title {
+        grid-area: title;
+        font-weight: var(--fw-600);
+        font-size: var(--fs-600);
+    }
+    &__content {
+        grid-area: content;
+        max-width: 80ch;
+    }
+}

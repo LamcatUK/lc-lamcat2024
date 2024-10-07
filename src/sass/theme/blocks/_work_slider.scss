@@ -1,0 +1,43 @@
+.work_slider {
+
+    &__card {
+        display: block;
+        &:hover {
+            color: initial;
+            .work_slider__arrow::after {
+                margin-left: 1em;
+            }
+            .work_slider__ul {
+                // border-bottom-color: var(--col-dark);
+                // box-shadow: inset 0 -1px 0 0 #000000;
+                text-decoration-color: currentColor; 
+            }
+        }
+    }
+    &__image {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+    }
+    &__title {
+        font-size: var(--fs-400);
+        font-weight: var(--fw-500);
+        margin-bottom: 0;
+    }
+    &__ul {
+        font-weight: var(--fw-400);
+        font-size: var(--fs-400);
+
+        text-decoration: underline;
+        text-decoration-thickness: 1px; /* Control thickness */
+        text-decoration-color: transparent; /* Start transparent */
+        text-decoration-skip-ink: auto; /* Ensure it doesn’t skip over descenders */
+        transition: text-decoration-color 0.3s ease;
+
+        // text-decoration: none;
+        // position: relative;
+        // box-shadow: inset 0 -1px 0 0 transparent;
+        // transition: box-shadow var(--transition);
+        // display: inline-block;
+    }
+}
