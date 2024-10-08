@@ -1,0 +1,43 @@
+input[type="text"],
+input[type="email"],
+textarea {
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    color: #111;
+    font-size: 1em;
+    text-align: left;
+    margin: 0;
+    border: 0 none;
+    border-bottom: 1px solid #d1d1d1;
+    width: 100%;
+}
+
+textarea {
+    background-attachment: local;
+    background-image:
+        linear-gradient(to right, white 10px, transparent 10px),
+        linear-gradient(to left, white 10px, transparent 10px),
+        repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
+    line-height: 31px;
+    padding: 8px 11px;
+    border-bottom: none;
+}
+
+.form-check {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wpcf7-list-item {
+    min-width: 180px;
+    margin-inline-start: 0;
+    label {
+        cursor: pointer;
+    }
+}
+.wpcf7-list-item-label::before {
+    padding-right: 0.25rem;
+}
