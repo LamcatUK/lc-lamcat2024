@@ -11,9 +11,15 @@
             <div class="col-md-6 hero__intro mb-5 mb-md-0">
                 <?= get_field('intro') ?>
             </div>
-            <div class="col-md-5 text-center">
-                <?= do_shortcode('[contact_button]') ?>
-            </div>
+            <?php
+            if (!is_page('contact-us')) {
+            ?>
+                <div class="col-md-5 text-center">
+                    <?= do_shortcode('[contact_button]') ?>
+                </div>
+            <?php
+            }
+            ?>
         </div>
     </div>
 </section>
