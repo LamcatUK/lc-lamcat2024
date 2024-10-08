@@ -12597,19 +12597,22 @@ a.icon {
   background-clip: text;
   -webkit-background-clip: text; /* For Safari */
   color: transparent;
-  animation: wipe 1s ease forwards;
+  animation: wipe 500ms ease-in forwards;
 }
 .hero span:nth-child(1) {
   animation-delay: 0.5s;
 }
 .hero span:nth-child(2) {
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 .hero span:nth-child(3) {
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 .hero span:nth-child(4) {
-  animation-delay: 3.5s;
+  animation-delay: 2s;
+}
+.hero span:nth-child(5) {
+  animation-delay: 2.5s;
 }
 @keyframes wipe {
   0% {
