@@ -47,7 +47,10 @@ footer {
 .icon--email {
     &::before {
         content: '';
-        position: absolute;
+        display: inline-block;       
+        @media (min-width:576px) {
+            position: absolute;
+        }
         left: 0;
         top: 0;
         width: 18px;
@@ -60,7 +63,10 @@ footer {
 .icon--phone {
     &::before {
         content: '';
-        position: absolute;
+        display: inline-block;       
+        @media (min-width:576px) {
+            position: absolute;
+        }
         left: 0;
         top: 0;
         width: 18px;

@@ -11181,6 +11181,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: var(--fs-800);
+  line-height: 1.1;
 }
 
 h3, .h3 {
@@ -11508,7 +11509,7 @@ footer li {
 
 .icon--email::before {
   content: "";
-  position: absolute;
+  display: inline-block;
   left: 0;
   top: 0;
   width: 18px;
@@ -11517,10 +11518,15 @@ footer li {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media (min-width: 576px) {
+  .icon--email::before {
+    position: absolute;
+  }
+}
 
 .icon--phone::before {
   content: "";
-  position: absolute;
+  display: inline-block;
   left: 0;
   top: 0;
   width: 18px;
@@ -11528,6 +11534,11 @@ footer li {
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_2' data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; stroke-width: 0px; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpath class='cls-1' d='m0,6.25L28.12,0l15.62,28.12-16.37,13.09c7.05,13.36,18.03,24.33,31.4,31.4l13.09-16.37,28.12,15.62-6.25,28.12h-6.25C39.18,100,0,60.82,0,12.5v-6.25Z'/%3E%3C/g%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media (min-width: 576px) {
+  .icon--phone::before {
+    position: absolute;
+  }
 }
 
 .icon--facebook::before {
