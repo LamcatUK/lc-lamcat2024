@@ -45,6 +45,27 @@
             "append": ""
         },
         {
+            "key": "field_67058da538d61",
+            "label": "Contact Mobile",
+            "name": "contact_mobile",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_66f7ef92a8a31",
             "label": "Social",
             "name": "social",
@@ -236,5 +257,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1728146093
+    "modified": 1728417200
 }

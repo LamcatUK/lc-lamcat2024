@@ -31,6 +31,18 @@ function contact_email()
     return;
 }
 
+add_shortcode('whatsapp_button', 'whatsapp_button');
+function whatsapp_button()
+{
+    ob_start();
+?>
+    <a href="https://api.whatsapp.com/send?phone=<?= parse_phone(get_field('contact_mobile', 'options')) ?>&amp;text=Hi, I'm contacting you from the Lamcat website." title="WhatsApp" class="button--whatsapp">
+        WhatsApp
+    </a>
+<?php
+    return ob_get_clean();
+}
+
 function lc_gutenberg_admin_styles()
 {
     echo '
