@@ -12,7 +12,7 @@
                 <?= get_field('intro') ?>
             </div>
             <?php
-            if (!is_page('contact-us')) {
+            if (!is_page('contact-us') && !is_page('thank-you')) {
             ?>
                 <div class="col-md-5 text-center">
                     <?= do_shortcode('[contact_button]') ?>
