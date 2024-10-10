@@ -11798,9 +11798,12 @@ a.icon {
   background-color: hsla(0deg, 0%, 100%, 0.8);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
   transform: translate3d(0, 100%, 0); /* Initially off-screen (hidden) */
   transition: transform 1000ms ease; /* Smooth transition */
 }
