@@ -11539,6 +11539,8 @@ footer {
 }
 footer .menu {
   list-style: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
 }
 footer a {
   text-decoration: none;
@@ -11573,13 +11575,18 @@ footer li {
 }
 .footer__contact li {
   list-style-type: none;
-  padding-left: 25px;
   position: relative;
+}
+@media (min-width: 576px) {
+  .footer__contact li {
+    padding-left: 25px;
+  }
 }
 
 .icon--email::before {
   content: "";
   display: inline-block;
+  position: relative;
   left: 0;
   top: 0;
   width: 18px;
@@ -11597,6 +11604,7 @@ footer li {
 .icon--phone::before {
   content: "";
   display: inline-block;
+  position: relative;
   left: 0;
   top: 0;
   width: 18px;
@@ -11620,6 +11628,8 @@ footer li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: grid;
+  place-content: center;
 }
 
 .icon--linkedin::before {
@@ -11631,6 +11641,8 @@ footer li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: grid;
+  place-content: center;
 }
 
 .icon--instagram::before {
@@ -11642,6 +11654,8 @@ footer li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: grid;
+  place-content: center;
 }
 
 a.icon {

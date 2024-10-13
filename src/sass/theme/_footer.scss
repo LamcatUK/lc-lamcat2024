@@ -3,6 +3,7 @@ footer {
  
     .menu {
         list-style: none;
+        padding-inline-start: 0;
     }
     
     a {
@@ -40,14 +41,17 @@ footer {
     padding-inline-start: 0;
     li {
         list-style-type: none;
-        padding-left: 25px;
         position: relative;
+        @media (min-width:576px) {
+            padding-left: 25px;
+        }
     }
 }
 .icon--email {
     &::before {
         content: '';
-        display: inline-block;       
+        display: inline-block;
+        position: relative;
         @media (min-width:576px) {
             position: absolute;
         }
@@ -63,7 +67,8 @@ footer {
 .icon--phone {
     &::before {
         content: '';
-        display: inline-block;       
+        display: inline-block;
+        position: relative;
         @media (min-width:576px) {
             position: absolute;
         }
@@ -87,6 +92,8 @@ footer {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        display: grid;
+        place-content: center;
     }
 }
 
@@ -100,6 +107,8 @@ footer {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        display: grid;
+        place-content: center;
     }
 }
 
@@ -113,6 +122,8 @@ footer {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        display: grid;
+        place-content: center;
     }
 }
 
