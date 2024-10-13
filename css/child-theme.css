@@ -11636,6 +11636,11 @@ a.icon {
   margin-bottom: 0.5rem;
   font-size: var(--fs-600);
 }
+.blog h3, .blog .h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5rem;
+  font-size: var(--fs-500);
+}
 .blog .sidebar {
   position: sticky;
   top: 5rem;
