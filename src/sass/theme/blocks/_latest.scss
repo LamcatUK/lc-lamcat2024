@@ -2,6 +2,7 @@
 .related_news {
     &__card {
         display: block;
+        text-decoration: none;
         &:hover {
             color: initial;
             .latest__arrow::after {

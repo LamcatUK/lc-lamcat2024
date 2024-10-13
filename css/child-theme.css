@@ -11158,7 +11158,7 @@ body {
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
   font-size: var(--fs-400);
-  line-height: 1.4;
+  line-height: 1.5;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11220,6 +11220,10 @@ h4, .h4 {
   font-weight: var(--fw-400);
 }
 
+b, strong, .fw-500 {
+  font-weight: var(--fw-500);
+}
+
 .fw-600 {
   font-weight: var(--fw-600);
 }
@@ -11241,6 +11245,7 @@ h4, .h4 {
 }
 
 .button span, .button a {
+  text-decoration: none;
   display: inline-block;
   padding: 0.6rem 3rem 0.6rem 2rem;
   border: 2px solid var(--col-dark);
@@ -11642,12 +11647,16 @@ a.icon {
 }
 .blog .quick_links a {
   font-weight: var(--fw-400);
+  text-decoration: none;
 }
 .blog .quick_links ul {
   list-style: none;
 }
 .blog .quick_links li {
   margin-bottom: 0.5rem;
+}
+.blog__content a {
+  font-weight: var(--fw-600);
 }
 
 .news_index__grid {
@@ -12081,6 +12090,7 @@ textarea {
 .latest__card,
 .related_news__card {
   display: block;
+  text-decoration: none;
 }
 .latest__card:hover,
 .related_news__card:hover {
@@ -12456,12 +12466,15 @@ main {
 }
 main a {
   text-decoration: none;
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-400);
   color: var(--col-dark);
   transition: color var(--transition);
 }
 main a:hover {
   color: var(--col-blue-400);
+}
+main a:not(:has([class])) {
+  font-weight: var(--fw-600);
 }
 
 .arrow-link a {

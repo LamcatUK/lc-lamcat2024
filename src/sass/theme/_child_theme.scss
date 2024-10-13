@@ -33,13 +33,18 @@ main {
 
     a {
         text-decoration: none;
-        font-weight: var(--fw-600);
+        font-weight: var(--fw-400);
         color: var(--col-dark);
         transition: color var(--transition);
         &:hover {
             color: var(--col-blue-400);
         }
     }
+
+    a:not(:has([class])) {
+        font-weight: var(--fw-600);
+    }
+
 }
 
 .arrow-link {

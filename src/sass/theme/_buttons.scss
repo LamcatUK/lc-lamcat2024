@@ -1,6 +1,7 @@
 .button {
     // padding-top: 1rem;
     span, a {
+        text-decoration: none;
         display: inline-block;
         padding: 0.6rem 3rem 0.6rem 2rem;
         border: 2px solid var(--col-dark);

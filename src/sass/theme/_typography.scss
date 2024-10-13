@@ -51,7 +51,7 @@ body {
     font-family: var(--ff-body);
     font-weight: var(--fw-400);
     font-size: var(--fs-400);
-    line-height: 1.4;
+    line-height: 1.5;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -104,6 +104,9 @@ h4 {
 
 .fw-400 {
     font-weight: var(--fw-400);
+}
+b, strong, .fw-500 {
+    font-weight: var(--fw-500);
 }
 .fw-600 {
     font-weight: var(--fw-600);

@@ -26,6 +26,7 @@
         margin-bottom: 1rem;
         a {
             font-weight: var(--fw-400);
+            text-decoration: none;
         }
         ul {
             list-style: none;
@@ -33,6 +34,10 @@
         li {
             margin-bottom: 0.5rem;
         }
+    }
+
+    &__content a {
+        font-weight: var(--fw-600);
     }
 
 }
