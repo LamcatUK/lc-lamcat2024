@@ -16,7 +16,10 @@
                     <div class="review">
                         <div class="review__content"><?= get_field('review', get_the_ID()) ?></div>
 
-                        <div class="review__name"><?= get_field('reviewer', get_the_ID()) ?><br><?= get_field('reviewer_role', get_the_ID()) ?>, <?= get_the_title() ?></div>
+                        <div class="review__name">
+                            <div class="review__reviewer"><?= get_field('reviewer', get_the_ID()) ?></div>
+                            <?= get_field('reviewer_role', get_the_ID()) ?>, <?= get_the_title() ?>
+                        </div>
                         <div class="review__footer">
                             <?php
                             if (isset($l)) {
