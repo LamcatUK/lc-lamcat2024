@@ -122,6 +122,15 @@ function acf_blocks()
             'mode'    => 'edit',
             'supports' => array('mode' => false),
         ));
+        acf_register_block_type(array(
+            'name'                => 'lc_lp_hero',
+            'title'                => __('LC LP Hero'),
+            'category'            => 'layout',
+            'icon'                => 'cover-image',
+            'render_template'    => 'page-templates/blocks/lc_lp_hero.php',
+            'mode'    => 'edit',
+            'supports' => array('mode' => false),
+        ));
 
         // in dev
         acf_register_block_type(array(

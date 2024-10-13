@@ -24,9 +24,12 @@ defined('ABSPATH') || exit;
                     </li>
                 </ul>
                 <div class="mb-4 mb-sm-0 footer__socials fs-300">
-                    <a href="https://www.facebook.com/" class="icon icon--facebook"></a>
-                    <a href="https://www.linkedin.com/" class="icon icon--linkedin"></a>
-                    <a href="https://www.instagram.com/" class="icon icon--instagram"></a>
+                    <?php
+                    $s = get_field('social', 'option');
+                    ?>
+                    <a href="<?= $s['facebook_url'] ?>" class="icon icon--facebook"></a>
+                    <a href="<?= $s['linkedin_url'] ?> " class="icon icon--linkedin"></a>
+                    <a href="<?= $s['instagram_url'] ?>" class="icon icon--instagram"></a>
                 </div>
             </div>
             <div class="text-center text-sm-start col-sm-6 col-lg-3 order-lg-1">
