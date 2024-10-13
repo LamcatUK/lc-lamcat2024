@@ -1,6 +1,8 @@
 header {
-
-    background-color: hsl(0 0% 100% / 0.8);
+    background-color: hsl(0 0% 100% / 1);
+    @media (min-width:768px) {
+        background-color: hsl(0 0% 100% / 0.8);
+    }
     backdrop-filter: blur(4px);
 
     #main-menu {
@@ -53,7 +55,7 @@ header {
         padding-left: .5rem;
         position: relative;
         color: #000;
-        @media (min-width:576px) {
+        @media (min-width:768px) {
             padding: 1.5rem 1rem;
             line-height: 12px;
         }
@@ -69,27 +71,40 @@ header {
             transition: width .3s ease;
             z-index: -10;
         }
-        &:hover::before{
-            width: 100%;
-            left: 0;
-            background: var(--col-blue-400);
-            z-index: -10;
+        &[aria-current="page"] {
+            font-weight: var(--fw-600);
         }
-        &[aria-current="page"]::before
-        {
-            width: 100%;
-            background: var(--col-highlight);
+        @media (min-width:768px) {
+            &:hover::before{
+                width: 100%;
+                left: 0;
+                background: var(--col-blue-400);
+                z-index: -10;
+            }
+            &[aria-current="page"]::before
+            {
+                width: 100%;
+                background: var(--col-highlight);
+            }
         }
     }
 
-    .current-menu-parent > a::before {
-        width: 100%;
-        background: var(--col-highlight);
-        transition: background var(--transition);
+    .current-menu-parent > a {
+        font-weight: var(--fw-600);
+        @media (min-width:768px) {
+            &::before {
+                width: 100%;
+                background: var(--col-highlight);
+                transition: background var(--transition);
+            }
+        }
     }
 
     .dropdown-item:active {
         background-color: var(--col-blue-400);
+    }
+    .dropdown-item[aria-current="page"] {
+        font-weight: var(--fw-600);
     }
 
 

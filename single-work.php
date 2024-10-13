@@ -8,7 +8,7 @@ the_post();
 ?>
 <main class="work_item">
     <div class="container-xl">
-        <div class="row pb-4" id="workTitle">
+        <div class="row pb-4 g-4" id="workTitle">
             <div class="col-md-7">
                 <h1 class="mb-2"><?= get_the_title() ?></h1>
                 <div class="text-muted">

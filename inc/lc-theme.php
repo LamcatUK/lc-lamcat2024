@@ -236,7 +236,7 @@ function lc_work_nav()
             <h3 class="fs-400">Next Project</h3>
             <a href="<?php echo $next_post_link; ?>" rel="next"
                 class="next">
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-md-6">
                         <h2 class="mb-0"><?= get_the_title($next_post_ID) ?></h2>
                         <div class="category text-muted fs-400 fw-400">
