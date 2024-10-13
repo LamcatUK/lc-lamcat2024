@@ -12114,9 +12114,10 @@ textarea {
 }
 .latest__title,
 .related_news__title {
-  font-size: var(--fs-400);
-  font-weight: var(--fw-500);
-  margin-bottom: 0;
+  font-size: var(--fs-400) !important;
+  font-weight: var(--fw-500) !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 .latest__arrow,
 .related_news__arrow {
