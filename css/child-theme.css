@@ -11459,6 +11459,18 @@ header .eyes {
     opacity: 1;
   }
 }
+header .current_page_parent a,
+header .current-menu-item a {
+  font-weight: var(--fw-600);
+}
+@media (min-width: 768px) {
+  header .current_page_parent a::before,
+  header .current-menu-item a::before {
+    width: 100%;
+    background: var(--col-highlight);
+    transition: background var(--transition);
+  }
+}
 header .nav-link {
   font-size: 1.2em;
   font-weight: 400;
@@ -11485,7 +11497,8 @@ header .nav-link::before {
   transition: width 0.3s ease;
   z-index: -10;
 }
-header .nav-link[aria-current=page] {
+header .nav-link[aria-current=page],
+header .nav-link .current-menu-item {
   font-weight: var(--fw-600);
 }
 @media (min-width: 768px) {
@@ -11784,7 +11797,7 @@ a.icon {
 }
 
 .work_item {
-  margin-top: calc(var(--h-top) + 3rem);
+  margin-top: calc(var(--h-top) + 2rem);
 }
 .work_item blockquote {
   font-size: var(--fs-600);

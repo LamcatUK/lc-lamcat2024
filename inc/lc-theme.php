@@ -299,3 +299,16 @@ function lc_short_work_nav()
 }
 
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+function add_active_class_to_work_menu($classes, $item)
+{
+    // Check if the current post type is your CPT and you're on a single post
+    if (is_singular('work')) {
+        // Check if the menu item links to '/work/'
+        if (in_array('menu-item', $item->classes) && strpos($item->url, '/work/') !== false) {
+            $classes[] = 'current-menu-item'; // Add the active class
+        }
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_active_class_to_work_menu', 10, 2);

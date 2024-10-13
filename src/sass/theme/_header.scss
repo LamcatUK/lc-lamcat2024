@@ -47,6 +47,17 @@ header {
         }
     }
 
+    .current_page_parent a,
+    .current-menu-item a {
+        font-weight: var(--fw-600);
+        @media (min-width:768px) {
+            &::before {
+                width: 100%;
+                background: var(--col-highlight);
+                transition: background var(--transition);
+            }
+        }
+    }
 
     .nav-link {
         font-size: 1.2em;
@@ -71,7 +82,8 @@ header {
             transition: width .3s ease;
             z-index: -10;
         }
-        &[aria-current="page"] {
+        &[aria-current="page"],
+        .current-menu-item {
             font-weight: var(--fw-600);
         }
         @media (min-width:768px) {
