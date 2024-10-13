@@ -42,16 +42,18 @@ $bg = get_the_post_thumbnail_url($page_for_posts, 'full') ?? null;
                                 <div class="fs-300 fw-bold">
                                     <?= get_the_date() ?>
                                 </div>
-                                <?php
-                                if ($categories) {
-                                    foreach ($categories as $category) {
-                                ?>
-                                        <span
-                                            class="news_index__category"><?= esc_html($category->name) ?></span>
-                                <?php
+                                <div>
+                                    <?php
+                                    if ($categories) {
+                                        foreach ($categories as $category) {
+                                    ?>
+                                            <span
+                                                class="news_index__category"><?= esc_html($category->name) ?></span>
+                                    <?php
+                                        }
                                     }
-                                }
-                                ?>
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </a>
