@@ -11804,14 +11804,14 @@ a.icon {
   font-weight: var(--fw-600);
   line-height: 1.2;
 }
-.work_item .work_item {
+.work_item .work_image {
   display: block;
   isolation: isolate;
   overflow: hidden;
   margin-bottom: 1rem;
   position: relative;
 }
-.work_item .work_item::after {
+.work_item .work_image::after {
   content: "";
   position: absolute;
   top: 1rem;
@@ -11823,18 +11823,18 @@ a.icon {
   transition: opacity var(--transition);
   opacity: 0;
 }
-.work_item .work_item img {
-  aspect-ratio: 16/9;
+.work_item .work_image img {
+  aspect-ratio: 4/3;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   transition: filter var(--transition), scale var(--transition) !important;
 }
-.work_item .work_item:hover img {
+.work_item .work_image:hover img {
   filter: brightness(0.8);
   scale: 1.05;
 }
-.work_item .work_item:hover::after {
+.work_item .work_image:hover::after {
   opacity: 1;
 }
 

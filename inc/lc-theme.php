@@ -312,3 +312,24 @@ function add_active_class_to_work_menu($classes, $item)
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_active_class_to_work_menu', 10, 2);
+
+function remove_current_page_parent_class($classes, $item)
+{
+    // Get the ID of the page assigned as the 'Posts Page' (which is 'insights' in your case)
+    $posts_page_id = get_option('page_for_posts');
+
+    // Check if the current menu item is the 'Insights' page
+    if ($item->object_id == $posts_page_id) {
+        // If on a default post type page (regular blog posts or archives)
+        if (is_single() && get_post_type() == 'post' || is_home() || is_archive()) {
+            // Ensure the parent class is added for blog-related pages
+            $classes[] = 'current_page_parent';
+        } else {
+            // Remove the class when viewing custom post types or other content
+            $classes = array_diff($classes, array('current_page_parent'));
+        }
+    }
+
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'remove_current_page_parent_class', 10, 2);

@@ -85,7 +85,7 @@ the_post();
                         $full = wp_get_attachment_image_url($image, 'full');
                         $thumb = wp_get_attachment_image_url($image, 'large');
                     ?>
-                        <a href="<?= $full ?>" data-fancybox="gallery" class="work_item"><img
+                        <a href="<?= $full ?>" data-fancybox="gallery" class="work_image"><img
                                 src="<?= $thumb ?>"></a>
                     <?php
                     }
