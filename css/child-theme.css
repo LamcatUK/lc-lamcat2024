@@ -11754,6 +11754,7 @@ a.icon {
 .work_item blockquote {
   font-size: var(--fs-600);
   font-weight: var(--fw-600);
+  line-height: 1.2;
 }
 .work_item .work_item {
   display: block;

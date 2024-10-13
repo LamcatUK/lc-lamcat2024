@@ -9,7 +9,7 @@ the_post();
 <main class="work_item">
     <div class="container-xl">
         <div class="row pb-4" id="workTitle">
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <h1 class="mb-2"><?= get_the_title() ?></h1>
                 <div class="text-muted">
                     <?php
@@ -24,7 +24,7 @@ the_post();
                     ?>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="h4">
                     <?= get_field('subtitle') ?>
                 </div>
@@ -60,6 +60,7 @@ the_post();
                     <?php
                     if (get_field('site_url') ?? null) {
                     ?>
+                        <br>
                         <a href="<?= get_field('site_url') ?>"
                             target="_blank" rel="noopener"
                             class="link--external"><?= get_the_title() ?></a>
@@ -72,7 +73,7 @@ the_post();
                 <?php
                 if (get_field('pre_quote')) {
                 ?>
-                    <blockquote>
+                    <blockquote class="mb-4">
                         <?= get_field('pre_quote') ?>
                     </blockquote>
                     <?php
@@ -92,7 +93,7 @@ the_post();
                 }
                 if (get_field('post_quote')) {
                     ?>
-                    <blockquote>
+                    <blockquote class="mt-4">
                         <?= get_field('post_quote') ?>
                     </blockquote>
                 <?php
