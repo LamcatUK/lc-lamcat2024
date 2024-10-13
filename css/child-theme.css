@@ -11399,7 +11399,7 @@ b, strong, .fw-500 {
   animation-timing-function: linear;
 }
 .link .link-circle text {
-  font-size: 13px;
+  font-size: 14.5px;
   line-height: 21px;
   letter-spacing: 0.675px;
   fill: var(--col-dark);
