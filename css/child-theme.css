@@ -11944,6 +11944,39 @@ textarea {
   padding-right: 0.25rem;
 }
 
+.wpcf7-submit {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.6rem 3rem 0.6rem 2rem;
+  border: 2px solid var(--col-dark);
+  border-radius: 100vw;
+  position: relative;
+  color: var(--col-dark);
+  background-color: var(--col-light);
+  transition: background-color var(--transition), color var(--transition);
+}
+.wpcf7-submit::after {
+  position: absolute;
+  content: "";
+  margin-left: 0.5em;
+  transition: margin var(--transition), background-image var(--transition);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 99.69 85.09'%3E%3Cpath fill='%23000000' d='m59.67,82.57l-2.52,2.52-5.04-5.04,2.52-2.52,31.41-31.41H0v-7.14h86.03L54.62,7.57l-2.52-2.52,5.04-5.04,2.52,2.52,37.5,37.5,2.52,2.52-2.52,2.52-37.5,37.5Z'/%3E%3C/svg%3E");
+  width: 18px;
+  height: 44px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+}
+.wpcf7-submit:hover {
+  background-color: var(--col-dark);
+  color: var(--col-light) !important;
+}
+.wpcf7-submit:hover::after {
+  margin-left: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 99.69 85.09'%3E%3Cpath fill='%23ffffff' d='m59.67,82.57l-2.52,2.52-5.04-5.04,2.52-2.52,31.41-31.41H0v-7.14h86.03L54.62,7.57l-2.52-2.52,5.04-5.04,2.52,2.52,37.5,37.5,2.52,2.52-2.52,2.52-37.5,37.5Z'/%3E%3C/svg%3E");
+}
+
 .wp-block-separator {
   margin-block: 3rem 4rem;
 }
