@@ -11733,10 +11733,7 @@ a.icon {
   box-shadow: var(--shadow-in);
   transition: transform var(--transition), box-shadow var(--transition);
 }
-.news_index__card:hover {
-  transform: translateY(2px);
-}
-.news_index__card:hover .news_index__image {
+.news_index__card:hover .news_index__image img {
   transform: scale(1.1);
 }
 @media (min-width: 992px) {

@@ -71,21 +71,11 @@
         box-shadow: var(--shadow-in);
         transition: transform var(--transition), box-shadow var(--transition);
         &:hover {
-            // box-shadow: var(--shadow-in-2);
-            transform: translateY(2px);
-            .news_index__image {
+            .news_index__image img {
                 transform: scale(1.1);
             }
         }
         
-        // img {
-        //     width: 100%;
-        //     aspect-ratio: 16 / 9;
-        //     object-fit: cover;
-        //     object-position: center;
-        //     box-shadow: inset 0 0 5px #00000080;
-        // }
-
         @media (min-width:992px) {
             &--first {
                 grid-column: 1 / -1;
