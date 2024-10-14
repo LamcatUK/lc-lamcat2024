@@ -11756,9 +11756,9 @@ a.icon {
   width: 100%;
   aspect-ratio: 16/9;
   overflow: hidden;
-  transition: var(--transition);
 }
 .news_index__image img {
+  transition: transform var(--transition);
   aspect-ratio: 16/9;
   width: 100%;
   -o-object-fit: cover;
