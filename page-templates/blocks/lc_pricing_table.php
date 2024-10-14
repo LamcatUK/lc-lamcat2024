@@ -23,7 +23,7 @@
                         </ul>
                     </div>
                     <div class="button mx-auto mb-4">
-                        <a href="/contact/">Get Started</a>
+                        <a href="/contact-us/">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                         </ul>
                     </div>
                     <div class="button mx-auto mb-4">
-                        <a href="/contact/">Get Started</a>
+                        <a href="/contact-us/">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                         </ul>
                     </div>
                     <div class="button mx-auto mb-4">
-                        <a href="/contact/">Get Started</a>
+                        <a href="/contact-us/">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                         </ul>
                     </div>
                     <div class="button mx-auto mb-4">
-                        <a href="/contact/">Get Started</a>
+                        <a href="/contact-us/">Get Started</a>
                     </div>
                 </div>
             </div>
