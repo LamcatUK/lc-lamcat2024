@@ -91,7 +91,7 @@ $img = get_the_post_thumbnail_url(get_the_ID(), 'full');
                         </div>
                     </div>
                     <div class="text-center button button--inverse">
-                        <a href="/contact/">Get in touch</a>
+                        <a href="/contact-us/">Get in touch</a>
                     </div>
                 </div>
             </div>
