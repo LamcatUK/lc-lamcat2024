@@ -11734,17 +11734,10 @@ a.icon {
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .news_index__card:hover {
-  box-shadow: var(--shadow-in-2);
   transform: translateY(2px);
 }
-.news_index__card img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5019607843);
+.news_index__card:hover .news_index__image {
+  transform: scale(1.1);
 }
 @media (min-width: 992px) {
   .news_index__card--first {
@@ -11765,8 +11758,11 @@ a.icon {
   position: relative;
   width: 100%;
   aspect-ratio: 16/9;
+  overflow: hidden;
+  transition: var(--transition);
 }
 .news_index__image img {
+  aspect-ratio: 16/9;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
